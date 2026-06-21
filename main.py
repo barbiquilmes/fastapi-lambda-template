@@ -39,9 +39,9 @@ ssm = boto3.client("ssm", region_name="eu-west-1")
 def get_ssm(name):
     return ssm.get_parameter(Name=name, WithDecryption=True)["Parameter"]["Value"]
 
-VALID_USERNAME = get_ssm("/templatelog/username")
-VALID_PASSWORD = get_ssm("/templatelog/password")
-JWT_SECRET     = get_ssm("/templatelog/jwt-secret")
+VALID_USERNAME = get_ssm("/yourapp/username")
+VALID_PASSWORD = get_ssm("/yourapp/password")
+JWT_SECRET     = get_ssm("/yourapp/jwt-secret")
 
 # --- Auth ---
 
@@ -80,7 +80,7 @@ def login(request: Request, body: LoginRequest):
 # --- DynamoDB ---
 
 dynamodb = boto3.resource("dynamodb", region_name="eu-west-1")
-table = dynamodb.Table("templatelog-items")  # replace with your table name
+table = dynamodb.Table("yourapp-items")  # replace with your table name
 
 
 def to_decimal(obj):
