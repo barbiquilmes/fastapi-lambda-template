@@ -1,4 +1,4 @@
-# 02 — AWS Infrastructure
+# 01 — AWS Infrastructure
 
 ## Architecture
 

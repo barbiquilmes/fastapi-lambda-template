@@ -1,4 +1,4 @@
-# 04 — Gotchas (Read This First Next Time)
+# 02 — Gotchas (Read This First Next Time)
 
 Things that went wrong, why, and how to fix them.
 

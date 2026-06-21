@@ -1,4 +1,4 @@
-# 06 — How to Update the Lambda Function
+# 04 — How to Update the Lambda Function
 
 Run these commands from the repo root. 
 

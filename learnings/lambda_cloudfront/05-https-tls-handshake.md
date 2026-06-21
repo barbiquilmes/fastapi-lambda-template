@@ -1,4 +1,4 @@
-# 07 — How HTTPS / TLS Works
+# 05 — How HTTPS / TLS Works
 
 ## The handshake
 

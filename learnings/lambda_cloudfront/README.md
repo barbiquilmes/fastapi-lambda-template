@@ -17,11 +17,11 @@ A private web app on AWS with:
 
 | File | What it covers |
 |---|---|
-| `02-aws-infrastructure.md` | Architecture overview + full Terraform deployment guide |
-| `04-gotchas.md` | Everything that broke and why — read this first next time |
-| `05-security.md` | What's protected, what isn't, and why |
-| `06-updating-lambda.md` | How to redeploy after changes |
-| `07-https-tls-handshake.md` | Deep dive on TLS/HTTPS with step-by-step diagrams |
+| `01-aws-infrastructure.md` | Architecture overview + full Terraform deployment guide |
+| `02-gotchas.md` | Everything that broke and why — read this first next time |
+| `03-security.md` | What's protected, what isn't, and why |
+| `04-updating-lambda.md` | How to redeploy after changes |
+| `05-https-tls-handshake.md` | Deep dive on TLS/HTTPS with step-by-step diagrams |
 
 ## Quick Stack Reference
 

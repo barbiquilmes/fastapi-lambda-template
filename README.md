@@ -41,11 +41,11 @@ main.py              # FastAPI app + Lambda handler
 pyproject.toml       # Dependencies (uv)
 terraform/           # All AWS infrastructure as code
 learnings/
-  02-aws-infrastructure.md   # Architecture deep dive + deployment steps
-  04-gotchas.md
-  05-security.md
-  06-updating-lambda.md
-  07-https-tls-handshake.md
+  01-aws-infrastructure.md   # Architecture deep dive + deployment steps
+  02-gotchas.md
+  03-security.md
+  04-updating-lambda.md
+  05-https-tls-handshake.md
 ```
 
 ## Quick start
@@ -65,7 +65,7 @@ uv run uvicorn main:app --reload
 
 ### 3. Deploy to AWS
 
-See `learnings/02-aws-infrastructure.md` for the full walkthrough. The short version:
+See `learnings/01-aws-infrastructure.md` for the full walkthrough. The short version:
 
 ```bash
 # 1. Update main.py with your app name (SSM paths + DynamoDB table)
@@ -107,10 +107,10 @@ cd terraform && terraform destroy
 
 The `learnings/` folder is the most valuable part of this repo — real issues hit during development:
 
-- `02-aws-infrastructure.md` — architecture explained + full Terraform deployment guide
-- `04-gotchas.md` — `/ping` reserved by API Gateway, Mangum config, DynamoDB float issue, and more
-- `05-security.md` — what's protected, what isn't, and why
-- `07-https-tls-handshake.md` — deep dive on TLS/HTTPS with step-by-step diagrams
+- `01-aws-infrastructure.md` — architecture explained + full Terraform deployment guide
+- `02-gotchas.md` — `/ping` reserved by API Gateway, Mangum config, DynamoDB float issue, and more
+- `03-security.md` — what's protected, what isn't, and why
+- `05-https-tls-handshake.md` — deep dive on TLS/HTTPS with step-by-step diagrams
 
 ## Customization
 
