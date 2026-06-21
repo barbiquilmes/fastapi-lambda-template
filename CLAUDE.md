@@ -148,3 +148,7 @@ handler = Mangum(app, lifespan="off")
 - Secrets live in SSM Parameter Store — never in code or environment variables
 - Rate limit `/login` to prevent brute force: `@limiter.limit("5/minute")`
 - DynamoDB rejects Python `float` — always convert via `Decimal(str(value))`
+
+---
+
+_Behavioral guidelines adapted from [multica-ai/andrej-karpathy-skills](https://github.com/multica-ai/andrej-karpathy-skills)._
