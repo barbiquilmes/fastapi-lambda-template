@@ -46,6 +46,7 @@ learnings/
   03-security.md
   04-updating-lambda.md
   05-https-tls-handshake.md
+.claude/skills/      # Claude Code skill — critical pitfalls loaded automatically
 ```
 
 ## Quick start
