@@ -120,6 +120,14 @@ cloudfront_url  = "https://xxxx.cloudfront.net"
 
 ### Step 7 — Upload the frontend
 
+First update the API URL in `index.html` — replace the placeholder with the `api_gateway_url` from the Terraform output:
+
+```javascript
+const API = "https://<your-api-gateway-url>";  // from terraform output api_gateway_url
+```
+
+Then upload:
+
 ```bash
 aws s3 cp index.html s3://$(terraform output -raw frontend_bucket)/
 ```
